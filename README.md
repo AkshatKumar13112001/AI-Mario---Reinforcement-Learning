@@ -2,6 +2,8 @@
 
 We create an AI that's able to play Super Mario Bros be using Double Deep Q Network Reinforcement Learning algorithm to do this.
 
+**Working Model**
+https://github.com/AkshatKumar13112001/AI-Mario---Reinforcement-Learning/assets/118676207/bc12cc12-5384-45bf-b248-33349522eac3
 
 ## Features
 
