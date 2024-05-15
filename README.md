@@ -13,12 +13,6 @@ The project implements Double Deep Q Learning using Convolutional Neural Network
 
 To address the Explore-Exploit dilemma, the agent employs an Epsilon-Greedy Approach, balancing between exploiting known strategies and exploring new ones.
 
-Make sure you activate the environment.
-
-```bash
-conda activate smbrl
-```
-
 **NES Emulation**
 
 The game environment is emulated using an API based on OpenAI’s Gym reinforcement learning library, providing a realistic environment for the agent to learn and play in.
