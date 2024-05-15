@@ -1,23 +1,17 @@
 # Super Mario Bros Reinforcement Learning
 
-We create an AI that's able to play Super Mario Bros! We'll be using Double Deep Q Network Reinforcement Learning algorithm to do this.
+We create an AI that's able to play Super Mario Bros be using Double Deep Q Network Reinforcement Learning algorithm to do this.
 
 
-## Installation
+## Features
 
-**First, clone this repository**
+**DDQN with CNN**
 
-```bash
-git clone https://github.com/Sourish07/Super-Mario-Bros-RL.git
-```
+The project implements Double Deep Q Learning using Convolutional Neural Networks to facilitate efficient learning and decision-making.
 
-**Next, create a virtual environment**
+**Epsilon-Greedy Approach**
 
-The command below is for a conda environment, but use whatever you're comfortable with. I'm using Python 3.10.12.
-
-```bash
-conda create --name smbrl python=3.10.12
-```
+To address the Explore-Exploit dilemma, the agent employs an Epsilon-Greedy Approach, balancing between exploiting known strategies and exploring new ones.
 
 Make sure you activate the environment.
 
@@ -25,22 +19,12 @@ Make sure you activate the environment.
 conda activate smbrl
 ```
 
-**Then, install PyTorch v2.1.1**
+**NES Emulation**
 
-The steps here will be a little different for everyone depending on if you're using a GPU or not. This is why the PyTorch lines in the requirements.txt file are commented out.
+The game environment is emulated using an API based on OpenAI’s Gym reinforcement learning library, providing a realistic environment for the agent to learn and play in.
 
-If you are using a GPU, it also depends on what version of CUDA you're using (assuming you're using an NVIDIA card). I'm using CUDA 12.1, so I have to go to PyTorch's website and then install PyTorch v2.1.1 for CUDA version 12.1.
+**Training**
 
-For more information, please go to [PyTorch's website](https://pytorch.org/get-started/locally/).
+The model is trained through 50,000 iterations, during which the AI learns and improves its gameplay strategies until it successfully completes the level.
 
-My command looked like:
 
-```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-```
-
-**Finally, install the rest of the requirements**
-
-```bash
-pip install -r requirements.txt
-```
